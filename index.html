@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Link</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+<body>
+  <header>
+    <h1>Buy and Sell Anything Here</h1>
+    <input type="text" id=""trending-products"" placeholder="Search anything">
+    <button id="search-button">Search</button>
+  </header>
+
+  <main>
+    <div class="categories-container">
+      <h2>Categories</h2>
+      <ul>
+        <li class="category">
+          <a href="#">Electronics</a>
+          <ul class="subcategories">
+            <li><a href="#">Mobile Phones</a></li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Cameras</a></li>
+          </ul>
+        </li>
+        <li class="category">
+          <a href="#">Fashion and Apparel</a>
+          <ul class="subcategories">
+            <li><a href="#">Men's Clothing</a></li>
+            <li><a href="#">Women's Clothing</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
+        </li>
+        <li class="category">
+          <a href="#">Home and Kitchen</a>
+          <ul class="subcategories">
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Appliances</a></li>
+            <li><a href="#">Cookware</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <section id="trending-products">
+      <h2>Trending Products</h2>
+      <div class="product1">
+        <img src="file:///C:/Users/user/Documents/infinix-hot10n.jpg" alt="Infinix Hot10">
+        <h3>Infinix Hot10</h3>
+        <h3>N80,000</h3>
+      </div>
+      <div class="product2">
+        <img src="file:///C:/Users/user/Documents/Hp%2014%20Core%20I5.jpg" alt="Hp 14 Core I5">
+        <h3>Laptop Hp 14 Core I5 256GB SSD 8GB RAM 14"</h3>
+        <h3>₦385,000</h3>
+      </div>
+      <div class="product3">
+        <img src="file:///C:/Users/user/Documents/Furniture.jpg" alt="Furniture">
+        <h3>Furniture</h3>
+        <h3>N30,000</h3>
+      </div>
+    </section>
+  </main>
+
+ 
+    <div id="sell-form">
+      <h2>Sell a Product or Offer a Service</h2>
+      <a id="form-link" href="#">Click here to open the form</a>
+      <form id="sell-form-content" action="process_sell.php" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="product-name">Product Name:</label>
+          <input type="text" id="product-name" name="product-name" required>
+        </div>
+        <div class="form-group">
+          <label for="product-description">Product Description:</label>
+          <textarea id="product-description" name="product-description" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="product-price">Product Price:</label>
+          <input type="number" id="product-price" name="product-price" required>
+        </div>
+        <div class="form-group">
+          <label for="product-image">Product Image:</label>
+          <input type="file" id="product-image" name="product-image" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  
+
+  <footer>
+    <div class="footer-links">
+      <a href="#" id="about-link">About Us</a>
+      <a href="resources.html">Our Resources</a>
+      <a href="support.html">Support</a>
+    </div>
+    <div class="footer-info" id="about-content" style="display: none;">
+      <h2>Welcome to Market Link!</h2>
+      <p>
+        At Market Link, our mission is to connect buyers and sellers, making it easier than ever to find the products and services you need. Whether you're looking to buy or sell, our platform is designed to provide a seamless and efficient experience.
+      </p>
+      <p>
+        As an online marketplace, Market Link offers a wide range of categories to cater to your diverse needs. From vehicles and properties to electronics and more, you can browse through our extensive selection to find exactly what you're looking for. Our intuitive search feature enables you to quickly and easily locate any item within our website, ensuring a hassle-free shopping experience.
+      </p>
+      <p>
+        For sellers, Market Link offers a simple and convenient way to showcase your products or services. By clicking on the "Sell" button, you can access a form where you can provide all the necessary information about your item. Whether you're an individual looking to sell a used item or a business promoting your services, Market Link is here to support you.
+      </p>
+      <p>
+        We believe in empowering our users, which is why we offer free product listings for everyone. However, if you're looking to enhance your marketing efforts, we also provide paid options to help boost the visibility of your products. This includes not only exposure on our website but also across other media channels.
+      </p>
+      <p>
+        At Market Link, we're dedicated to providing a seamless platform that brings buyers and sellers together. We strive to create an inclusive and user-friendly environment that ensures a positive experience for all. Join us today and discover the endless possibilities of buying, selling, and connecting on Market Link!
+      </p>
+      <p>
+        Start exploring and unlock a world of opportunities at <a href="http://www.marketlink.com">www.marketlink.com</a>.
+      </p>
+      <p>
+        Best regards,<br>
+        Linus Agwuna<br>
+        Founder, Market Link
+      </p>
+    </div>
+    <div class="footer-info">
+      <p>&copy; 2023 MarketLink Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="search.js"></script>
+  <script src="trending.js"></script>
+</body>
+
+</html>

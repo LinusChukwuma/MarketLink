@@ -1,0 +1,24 @@
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    header {
+      font-size: 24px;
+    }
+  
+    #search-area,
+    #categories,
+    #sell-form,
+    #trending-products {
+      padding: 10px;
+    }
+  
+    form input,
+    form textarea {
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+  
+    form button[type="submit"] {
+      padding: 8px 16px;
+    }
+  }
+  

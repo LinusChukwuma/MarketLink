@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: hsl(187, 89%, 50%);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  margin: 0;
+  padding: 10px;
+}
+
+#search-input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+#search-button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* Main Styles */
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.categories-container {
+  flex-basis: 30%;
+}
+
+.categories-container h2 {
+  color: #ffffff;
+  background-color: #bec5c5;
+  padding: 10px;
+  margin: 0;
+}
+
+.category {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.category a {
+  color: #616666;
+  text-decoration: none;
+}
+
+.subcategories {
+  line-height: 0.5;
+  margin-top: 10px;
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.subcategories li {
+  margin-bottom: 5px;
+}
+
+.subcategories a {
+  color: #3cdce7;
+  text-decoration: none;
+}
+
+#trending-products {
+  text-align: center;
+}
+
+#trending-products h2 {
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+#trending-products .product1,
+#trending-products .product2,
+#trending-products .product3 {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+
+/* Sell Form Styles */
+#sell-form {
+  background-color: #34495e;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+#sell-form h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+
+#form-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#sell-form-content {
+  display: none;
+}
+
+#sell-form-content .form-group {
+  margin-bottom: 10px;
+}
+
+#sell-form-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#sell-form-content input[type="text"],
+#sell-form-content textarea,
+#sell-form-content input[type="number"] {
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+#sell-form-content button[type="submit"] {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #95a5a6;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-info {
+  margin-top: 20px;
+}
+
+#about-link {
+  cursor: pointer;
+}
+
+#about-content {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  main {
+    flex-wrap: wrap;
+  }
+
+  .categories-container {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  #trending-products {
+    flex-basis: 100%;
+  }
+}
+
+
+  
